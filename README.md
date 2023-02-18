@@ -9,6 +9,20 @@ There are also slides in PDF format
 [ParallelComputation.pdf](./ParallelComputation.pdf)
 with some discussion of terms and code commentary.
 
+The "Self counting troop" examples
+==================================
+
+The source of the example is [David Mackay's book]
+(https://www.inference.org.uk/itprnn/book.pdf)
+and the relevant chapter is [Chapter 16](./240.247.pdf)
+included here verbatim for convenience. Also,
+there is a [version with my handwritten annotations](./240.247.pdf.pdf).
+
+Parallel Implementation of the Icosian Puzzle solver
+=============================================================
+This is a parallel implementation of the Icosian Hamilton Circuit
+Problem. It is provided in a separate folder [ParallelIcosian](./ParallelIcosian).
+
 The origins
 ===================================
 I collected this information over several years
