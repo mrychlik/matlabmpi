@@ -1,0 +1,10 @@
+[marek@cannonball matlabmpi]$ ./forkme.sh 
+Hello, World! --Done with iteration: 1
+Hello, World! --Done with iteration: 2
+Hello, World! --Done with iteration: 3
+Hello, World! --Done with iteration: 4
+Hello, World! --Done with iteration: 5
+Hello, World! --Done with iteration: 6
+World! --Done with iteration: 7
+Hello, World!Hello,  --Done with iteration: 8
+Hello, World! --Done with iteration: 9
