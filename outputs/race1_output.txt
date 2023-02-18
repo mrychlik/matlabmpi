@@ -1,0 +1,12 @@
+>> race1
+Number of workers: 8
+Worker 1: 
+  1 sending 7 to 1
+Error using race1
+Error detected on worker 1.
+
+Caused by:
+    Error using race1
+    Destination (1) is same as source, would cause deadlock.
+ 
+>> 

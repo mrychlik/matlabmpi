@@ -1,0 +1,80 @@
+head	1.1;
+access;
+symbols;
+locks
+	marek:1.1; strict;
+comment	@// @;
+
+
+1.1
+date	2018.10.10.03.18.00;	author marek;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@[A, V, W] = icosian
+
+% Visualize Icosian graph and its Hamiltonian circuit
+G = graph(A);
+H = circuit_to_subgraph(V, W);
+h = plot(G,'Layout', 'force3');
+highlight(h, H, ...
+          'EdgeColor', 'r', ...
+          'LineWidth', 2);
+drawnow;
+
+I = full(incidence(G));
+e = numedges(G);
+v = numnodes(G);
+W = ones(e, 1);
+
+rng(666,'twister');
+
+% Create tsp_solver with default cost matrix
+obj = matching_solver(I, W, ...
+                 'beta', 0.01, ...
+                 'betaIncrement', 0.04, ...
+                 'numRuns', 100000, ...
+                 'tau', 1,...
+                 'visualize', false,...
+                 'energyThreshold', 3e-2);
+
+% Compute the Hamiltonian circuit as matrix
+
+assert( validate(obj) );
+
+e = addlistener(obj, 'best', 'PostSet', @@myCallback);
+
+
+% Run simulation
+figure;
+obj = sim(obj)
+
+
+% Print best cost
+disp(obj.best);
+
+K = matrix_to_subgraph(obj.best.x);
+h = plot(G,'Layout', 'force3');
+highlight(h, K, ...
+          'EdgeColor', 'b', ...
+          'LineWidth', 4);
+title('Found Hamiltonian Circuit');
+
+function myCallback(src, evnt)
+    obj = evnt.AffectedObject;
+    if obj.best.E == 0
+        disp('Minimum reached!!!')
+        obj.done = true;
+    end
+
+end@

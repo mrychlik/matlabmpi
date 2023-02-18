@@ -1,0 +1,35 @@
+>>
+Number of workers: 8
+Worker 1: 
+  Root==1 broadcast 7
+Worker 2: 
+  2 received 7 from root==1
+Worker 3: 
+  3 received 7 from root==1
+Worker 4: 
+  4 received 7 from root==1
+Worker 5: 
+  5 received 7 from root==1
+Worker 6: 
+  6 received 7 from root==1
+Worker 7: 
+  7 received 7 from root==1
+Worker 8: 
+  8 received 7 from root==1
+     1     7
+
+     2     7
+
+     3     7
+
+     4     7
+
+     5     7
+
+     6     7
+
+     7     7
+
+     8     7
+
+>> 

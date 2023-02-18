@@ -1,0 +1,12 @@
+[marek@cannonball]$ ./forkme.sh 
+Hello, World! --Done with iteration: 1
+Hello, World! --Done with iteration: 2
+World!Hello,  --Done with iteration: 3
+World!Hello,  --Done with iteration: 4
+Hello, World! --Done with iteration: 5
+World!Hello,  --Done with iteration: 6
+Hello, World! --Done with iteration: 7
+Hello, World! --Done with iteration: 8
+Hello, World! --Done with iteration: 9
+
+

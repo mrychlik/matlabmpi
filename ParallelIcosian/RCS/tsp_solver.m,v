@@ -1,0 +1,1336 @@
+head	1.55;
+access;
+symbols;
+locks; strict;
+comment	@// @;
+
+
+1.55
+date	2018.10.23.02.42.30;	author marek;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2018.10.23.02.37.59;	author marek;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2018.10.23.02.31.56;	author marek;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2018.10.23.02.28.20;	author marek;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2018.10.23.01.59.48;	author marek;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2018.10.23.01.57.58;	author marek;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2018.10.23.01.57.01;	author marek;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2018.10.23.01.52.46;	author marek;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2018.10.23.01.52.32;	author marek;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2018.10.23.01.51.56;	author marek;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2018.10.23.01.51.46;	author marek;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2018.10.23.01.47.09;	author marek;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2018.10.22.14.30.47;	author marek;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2018.10.22.14.30.06;	author marek;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2018.10.22.14.29.44;	author marek;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2018.10.22.14.29.17;	author marek;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2018.10.22.14.26.50;	author marek;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2018.10.22.14.26.00;	author marek;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2018.10.22.14.25.09;	author marek;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2018.10.22.14.23.03;	author marek;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2018.10.22.04.11.45;	author marek;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2018.10.22.03.53.24;	author marek;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2018.10.22.03.40.34;	author marek;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2018.10.22.03.39.49;	author marek;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2018.10.22.03.37.37;	author marek;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2018.10.22.03.37.09;	author marek;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2018.10.22.03.36.37;	author marek;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2018.10.22.03.35.35;	author marek;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2018.10.22.03.34.39;	author marek;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2018.10.22.03.32.04;	author marek;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2018.10.22.03.12.26;	author marek;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2018.10.22.03.12.20;	author marek;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2018.10.22.02.59.47;	author marek;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2018.10.22.02.37.10;	author marek;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2018.10.22.02.18.34;	author marek;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2018.10.22.02.16.40;	author marek;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2018.10.22.02.13.18;	author marek;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2018.10.22.02.12.23;	author marek;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2018.10.22.01.57.43;	author marek;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2018.10.22.01.54.51;	author marek;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2018.10.22.01.46.47;	author marek;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2018.10.22.01.39.00;	author marek;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2018.10.10.00.55.59;	author marek;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2018.10.10.00.55.38;	author marek;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2018.10.09.23.18.19;	author marek;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2018.10.09.23.17.54;	author marek;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2018.10.09.23.16.45;	author marek;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2018.10.09.23.16.31;	author marek;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2018.10.09.23.08.07;	author marek;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2018.10.09.23.07.22;	author marek;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2018.10.09.23.06.54;	author marek;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2018.10.09.23.06.11;	author marek;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2018.10.09.23.01.14;	author marek;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2018.10.09.23.01.01;	author marek;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.10.09.23.00.51;	author marek;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.55
+log
+@*** empty log message ***
+@
+text
+@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% M-file : tsp_solver.m
+%% Author: Marek Rychlik (10-9-2018)
+%% 
+%% Implements Hopfield-Tank model from the 1985 paper.
+%% In this version, we use an ODE solver to solve the
+%% continuous system for Hopfield-Tank.
+%%
+%% Object-oriented version.
+%%
+%% It features parallelized computation running continuous-time Hopfield
+%% model training algorithm for multiple random initial conditions in
+%% parallel.
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+classdef tsp_solver
+
+    properties
+
+        d;                              % cost matrix
+        beta;                           % Inverse temp
+        initial_beta;                   % Beta to start withh
+        delta_beta;                     % Annealing - inverse temp increment
+        gamma;                          % lower bound on optimal cost
+        n;
+        R;
+        num_runs;
+        tau;
+        visualize;                      % Turn visualization on/off
+        num_epochs;                     % Number of epochs (= intervals)
+        E_change_threshold;             % Minimum change of energy
+        E_threshold;                    % Stop search if best energy
+                                        % drops below this
+
+        gradient_delta = 1e-5;          % Delta for numerical gradient
+        gradient_err_threshold = 1e-3;  % Gradient validation constant
+        done = false;                   % Stop if this is set
+        best = [];                      % Best solution
+    end
+
+    properties(Constant)
+        initial_best = struct('E',Inf, 'x', []);
+    end;
+
+
+    methods
+        function obj = tsp_solver(d, varargin)
+            p = inputParser;
+            validCostMatrix = @@(x) size(x,1)==size(x,2);
+            addRequired(p,'d',validCostMatrix);
+
+            defaultBeta = 1;                    % Inverse temp.
+            validBeta = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'beta', defaultBeta, validBeta);
+
+            defaultDeltaBeta = .1;
+            validDeltaBeta = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'betaIncrement', defaultDeltaBeta, validDeltaBeta);
+
+            defaultTau = 1;
+            validTau = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'tau', defaultTau, validTau);
+
+            defaultNumRuns = 10;
+            validNumRuns = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'numRuns', defaultNumRuns, validNumRuns);
+
+            defaultNumEpochs = 1000;
+            validNumEpochs = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'numEpochs', defaultNumEpochs, validNumEpochs);
+
+            defaultEnergyChangeThreshold = 1e-3;
+            validEnergyChangeThreshold = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'energyChangeThreshold', ...
+                         defaultEnergyChangeThreshold, ...
+                         validEnergyChangeThreshold);
+
+            defaultEnergyThreshold = -Inf; % Never stop because energy met
+            validEnergyThreshold = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'energyThreshold', defaultEnergyThreshold, ...
+                         validEnergyThreshold);
+
+            defaultVisualize = false;
+            validVisualize = @@(x) islogical(x) && isscalar(x);
+            addParameter(p, 'visualize', defaultVisualize, validVisualize);
+
+            parse(p, d, varargin{:});
+
+            obj.d = p.Results.d;
+            obj.initial_beta = p.Results.beta;
+            obj.delta_beta = p.Results.betaIncrement;
+            obj.tau = p.Results.tau;
+            obj.num_runs = p.Results.numRuns;
+            obj.visualize = p.Results.visualize;
+            obj.num_epochs = p.Results.numEpochs;
+            obj.E_change_threshold = p.Results.energyChangeThreshold;
+            obj.E_threshold = p.Results.energyThreshold;            
+
+            obj.n = size(obj.d, 1);
+            obj.R = obj.n;
+            obj.gamma = min(sum(max(obj.d,[],1)), sum(max(obj.d,[],2)));
+        end
+
+        function obj = sim(obj)
+        %Simulates the continuous-time Hopfield training 
+        % ODE OBJ=SIM(OBJ) performs multiple runs of the Hopfield model
+        % continuous time training ODE for randomly chosen initial
+        % conditions.
+            E_best = Inf;
+            for run = 1:obj.num_runs
+                disp(sprintf('Run: %d', run));
+                obj = sim_aux(obj);
+                if obj.best.E < E_best;
+                    E_best = obj.best.E;
+                    best_obj = obj;
+                    disp(sprintf('Best energy: %6.2g', E_best));
+                end
+                if E_best < obj.E_threshold
+                    break;
+                end
+            end
+            obj = best_obj;
+
+            disp('---------------- RESULTS ----------------');
+            disp(sprintf('Best cost: %g', obj.best.E));
+            disp(obj.best.x);
+        end
+
+        function obj = sim_aux(obj)
+        %Runs the continuous Hopfield model training on all labs
+        % OBJ = SIM_AUX(OBJ) solves the ODE that trains the
+        % weights of the Hopfield model on all labs (workers)
+        % in parallel
+            obj.best  = tsp_solver.initial_best;
+            ret_obj = Composite();
+            % Explicitly creating Composite variables.
+            % You can think of them as being cell arrays whose
+            % cells belong to separate labs (threads). Within the
+            % SPMD block you don't need to use the cell syntax.
+            % Just use them as if they were ordinary variables.
+            E_optimal = Composite();
+            x_optimal = Composite();            
+            best_idx = Composite();
+            spmd
+                loc_obj = obj;
+                loc_obj.beta = loc_obj.initial_beta;
+                [t, x, E] = seek_equilibrium(loc_obj);
+                E_final = E(end);
+
+                % Round the final solution to the nearest vertex
+                x_optimal = round(squeeze(x(end,:,:)));
+                E_optimal = energy(loc_obj, x_optimal);
+                loc_obj.best = struct('E', E_optimal, 'x', x_optimal);
+
+                labBarrier;
+
+                E_best = gop(@@min,E_optimal);
+                
+                labBarrier;
+
+                if E_best == E_optimal
+                    best_idx = labindex;
+                end
+            end
+            
+            % Note that loc_obj is an implicitly created Composite.
+            % We need to pick the best solution by selecting
+            % the object with index determined by BEST_IDX. However,
+            % BEST_IDX is also a composite, whose value is empty
+            % in the labs which produced a suboptimal solution. Therefore
+            % we use EXIST to figure out which cells of the BEST_IDX are
+            % non-empty (the result is a 'mask'). EXIST returns an
+            % ordinary array of 0-1. We use FIND to get the lab indices
+            % of the optimal solutions. In fact, we only FIND the first
+            % optimal solution. Then we extract the optimal object using
+            % normal cell array indexing (curl braces syntax).
+            
+            obj = loc_obj{ find(exist(best_idx), 1) };
+        end
+
+        function [tn, xn, En] = seek_equilibrium(obj)
+        %Seek equilibrium state of the Hopfield-Tank model
+        % [X, E] = SEEK_EQUILIBRIUM(P) accepts parameters P of the
+        % Hopfield-Tank model and returns optimual equilibrium configuration
+        % X. The second value is the energy of the state X.
+
+            x0 = rand([obj.n, obj.n]);  % Generate random initial condition
+            t0 = 0;
+            y0 = x0(:);
+
+            tn = [];
+            yn = [];
+            xn = [];    
+            En = [];
+
+            for epoch = 1:obj.num_epochs
+                [t, y] = ode23(@@(y,t)vector_field(obj,y,t), [t0, t0+1], y0);
+                %[t, y] = ode45(@@(y,t)vector_field(obj,y,t), [t0, t0+1], y0);                
+                y0 = y(end,:);
+                t0 = t(end);
+
+                x = reshape(y, [size(y,1), obj.n, obj.n]);
+                xx = squeeze( x(end,:,:) );
+
+                E = zeros(size(x,1),1);
+                for j=1:size(x,1)
+                    E(j) = energy(obj, squeeze(x(j,:,:)) );
+                end
+
+                % Gather results
+                xn = [xn;x];
+                tn=[tn;t];
+                yn=[yn;y];        
+                En = [En;E];
+
+                % Visualization
+                if mod(epoch, 2) == 0 && obj.visualize
+                    subplot(2,2,[1,2]),plot(tn,En),
+                    title(sprintf('Epoch: %3d, learning: %6.3g, beta: %6.3g', ...
+                                  epoch, E(end), obj.beta)),
+                    subplot(2,2,3),imagesc(xx),
+                    title('Matrix'),
+                    subplot(2,2,4),plot(tn,yn),
+                    title('Entries vs. time'),
+                    drawnow;
+                end
+
+                if range(E) < obj.E_change_threshold
+                    if obj.visualize
+                        disp(sprintf(['Stopping in epoch %3d on threshold ' ...
+                                      'met.'], epoch));
+                    end
+                    break;
+                end
+                obj.beta = obj.beta + obj.delta_beta;
+            end
+        end
+
+        function E = energy(obj, x)
+        %Computes Hopfield-Tank energy
+        % E = ENERGY(X) takes an N-by-N matrix X of values in (0,1)
+        % and returns energy E according to the Hopfield-Tank Model
+            E = sum(obj.d .* (x * circshift(x, -1, 2)'), 'all') ...
+                + obj.gamma .* sum( (sum(x, 1) - 1) .^ 2) ...
+                + obj.gamma .* sum( (sum(x, 2) - 1) .^ 2 ) ...
+                + obj.R .* sum(x .* (1 - x), 'all') ...
+                + obj.gamma .* (x(1,1)-1)^2;
+            ;
+        end
+
+
+        function g = energy_gradient(obj, x)
+        %Computes the gradient of the Hopfield-Tank energy
+        % G = ENERGY_GRADIENT(X) takes an N-by-N matrix X of values in (0,1)
+        % and returns the matrix G of the same shape as X, which is
+        % the gradient of the Hopfield-Tank energy.
+            g = obj.d  * circshift(x,  -1, 2)  + ...
+                obj.d' * circshift(x, 1, 2) ...
+                + 2 .* obj.gamma .* ( (sum(x,2) - 1) * ones(1, obj.n) ) ...
+                + 2 .* obj.gamma .* ( ones(obj.n, 1) * (sum(x,1) - 1) ) ...
+                + obj.R .* (ones([obj.n, obj.n]) - 2 .* x);
+            g(1,1) = g(1,1) + 2 .* obj.gamma .* (x(1,1)-1);
+        end    
+
+        function g = energy_gradient_est(obj, x)
+        %Computes the gradient of the Hopfield-Tank energy
+        % G = ENERGY_GRADIENT(X) takes an N-by-N matrix X of values in (0,1)
+        % and returns the matrix G of the same shape as X, which is
+        % the gradient of the Hopfield-Tank energy.
+            g = zeros([obj.n,obj.n]);
+            for r = 1:obj.n
+                for c = 1:obj.n
+                    x1 = x; x2 = x;
+                    x1(r,c) = x1(r,c) + obj.gradient_delta;
+                    x2(r,c) = x2(r,c) - obj.gradient_delta;
+                    g(r,c) = ( energy(obj, x1) - energy(obj, x2) ) ./...
+                             (2 .* obj.gradient_delta);
+                                                                      
+                end
+            end
+        end    
+
+        function dydt = vector_field(obj, t, y)
+        %Computes the vector field
+        % DYDT = VECTOR_FIELD(OBJ, T, Y) finds the vector dY/DT
+        % according to the continuous Hopfield model training equation.
+            x = reshape(y, [obj.n, obj.n]);% Translate to 2D array
+            g = energy_gradient(obj, x);% Find gradient
+            b = tsp_solver.sigmoid( -obj.beta .* g );% find activity
+            dxdt = - (x - b) ./ obj.tau;% Define vector field
+            dydt = dxdt(:);             % Translate to 1D array
+        end
+
+        function r = validate(obj)
+        %Validate the gradient expression
+        % R = VALIDATE(OBJ) validates the gradient
+        % expression by using the exact formula
+        % and comparing to the estimate obtained using
+        % difference quotients.
+            x = rand([obj.n, obj.n]);
+            g1 = energy_gradient_est(obj, x);
+            g = energy_gradient(obj, x);
+            err = norm(g1(:) - g(:))
+            if err < obj.gradient_err_threshold
+                r = true;
+            else
+                r = false;
+            end
+        end
+    end;                                
+
+    methods(Static)
+        function y = sigmoid(x)
+            y = 1 ./ (1 + exp(-x));
+        end
+    end
+
+end@
+
+
+1.54
+log
+@*** empty log message ***
+@
+text
+@d44 1
+a44 1
+        initial_best = struct('E',Inf, 'x', [], 'count', -1);
+a127 2
+            disp(sprintf('Best configuration (seen %d/%d  times)', ...
+                          obj.best.count, obj.num_runs));
+d155 1
+a155 1
+                loc_obj.best = struct('E', E_optimal, 'x', x_optimal, 'count',1);
+@
+
+
+1.53
+log
+@*** empty log message ***
+@
+text
+@d170 12
+@
+
+
+1.52
+log
+@*** empty log message ***
+@
+text
+@d140 5
+@
+
+
+1.51
+log
+@*** empty log message ***
+@
+text
+@d134 4
+@
+
+
+1.50
+log
+@*** empty log message ***
+@
+text
+@d15 1
+a15 1
+% 
+@
+
+
+1.49
+log
+@*** empty log message ***
+@
+text
+@d6 9
+a14 9
+% Implements Hopfield-Tank model from the 1985 paper.
+% In this version, we use an ODE solver to solve the
+% continuous system for Hopfield-Tank.
+%
+% Object-oriented version.
+%
+% It features parallelized computation running continuous-time Hopfield
+% model training algorithm for multiple random initial conditions in
+% parallel.
+@
+
+
+1.48
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+% Object-oriented version
+d12 4
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d166 1
+a166 1
+            x0 = rand([obj.n, obj.n]);
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@a165 1
+
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d104 3
+a106 3
+        % ODE OBJ=SIM(OBJ) performs
+        % multiple runs of the Hopfield model continuous time training ODE
+        % for randomly chosen initial conditions.
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d103 4
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d261 2
+d271 5
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d76 1
+a76 1
+            defaultEnergyTreshold = -Inf; % Never stop because energy met
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d70 1
+a70 1
+            defaultEnergyChangeTreshold = 1e-3;
+@
+
+
+1.40
+log
+@Summary: h
+@
+text
+@d72 2
+a73 1
+            addParameter(p, 'energyChangeThreshold', defaultEnergyThreshold, ...
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d72 1
+a72 1
+            addParameter(p, 'energyChangeThreshold', defaultEnergyTreshold, ...
+d77 1
+a77 1
+            addParameter(p, 'energyThreshold', defaultEnergyTreshold, ...
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d75 1
+a75 1
+            defaultEnergyTreshold = 1e-3;
+@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@d94 1
+d111 1
+a111 1
+                if E_best == 0
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d70 5
+d93 1
+a93 1
+            obj.E_change_threshold = p.Results.energyThreshold;
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d29 3
+a31 1
+        E_threshold;                    % Minimum change of energy
+d88 1
+a88 1
+            obj.E_threshold = p.Results.energyThreshold;
+d197 1
+a197 1
+                if range(E) < obj.E_threshold
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d103 3
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d115 1
+a115 1
+            ret_obj = Composite(14);
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d101 1
+a101 1
+                    disp(E_best);
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d96 1
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d98 1
+a98 1
+                    E_Best = obj.best.E;
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d100 1
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d96 1
+a96 1
+                obj = sim_aux(obj)
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@a118 1
+                disp(sprintf('Lab: %d', labindex));
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d103 6
+a140 6
+
+            disp('---------------- RESULTS ----------------');
+            disp(sprintf('Best cost: %g', obj.best.E));
+            disp(sprintf('Best configuration (seen %d/%d  times)', ...
+                          obj.best.count, obj.num_runs));
+            disp(obj.best.x);
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d94 12
+d134 1
+a134 1
+            obj = loc_obj( find(exist(best_idx), 1) );
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d122 1
+a122 1
+            obj = loc_obj( find(exist(best_idx),1) );
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d98 1
+d118 1
+a118 1
+                    obj = x_optimal;
+d121 2
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d34 1
+a40 4
+    properties
+        best = tsp_solver.initial_best;
+    end
+
+d96 2
+d108 10
+a117 24
+                if loc_obj.visualize
+                    disp('Nearest vertex');
+                    display(x_optimal);    
+                    disp(sprintf('Energy at nearest vertex: %6.3f', E_optimal));
+                end
+                if E_optimal < loc_obj.best.E
+                    loc_obj.best = struct('E', E_optimal, ...
+                                          'x', x_optimal, ...
+                                          'count', 1);
+                    ret_obj = loc_obj;
+                elseif E_optimal == loc_obj.best.E
+                    loc_obj.best.count = loc_obj.best.count + 1;
+                end
+
+                disp(sprintf('Best cost: %g, current: %g', loc_obj.best.E, ...
+                             E_optimal));
+            end
+
+            E_best = Inf;
+            for j=1:length(ret_obj)
+                E = ret_obj{j}.best.E;
+                if  E < E_best
+                    E_best = E;
+                    obj = ret_obj{j};
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d98 2
+a99 2
+            ret_obj = obj;
+            parfor run = 1:16
+d101 1
+a101 1
+                disp(sprintf('Run: %d', run));
+d127 8
+a134 1
+            obj = ret_obj;
+d139 1
+a139 1
+                         obj.best.count, obj.num_runs));
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d118 1
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@a117 1
+                    ret_obj = loc_obj;
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d98 1
+a98 1
+            ret_obj = [];
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d98 2
+a99 1
+            parfor run = 1:obj.num_runs
+d118 1
+d125 3
+d129 5
+a133 6
+                disp('---------------- RESULTS ----------------');
+                disp(sprintf('Best cost: %g', loc_obj.best.E));
+                disp(sprintf('Best configuration (seen %d/%d  times)', ...
+                             loc_obj.best.count, loc_obj.num_runs));
+                % disp(loc_obj.best.x);
+            end
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d99 1
+a99 1
+                ob_loc = obj;
+d101 2
+a102 2
+                obj_loc.beta = obj_loc.initial_beta;
+                [t, x, E] = seek_equilibrium(obj_loc);
+d107 2
+a108 2
+                E_optimal = energy(obj_loc, x_optimal);
+                if obj_loc.visualize
+d113 2
+a114 2
+                if E_optimal < obj_loc.best.E
+                    obj_loc.best = struct('E', E_optimal, ...
+d117 2
+a118 2
+                elseif E_optimal == obj_loc.best.E
+                    obj_loc.best.count = obj_loc.best.count + 1;
+d121 1
+a121 1
+                disp(sprintf('Best cost: %g, current: %g', obj_loc.best.E, ...
+d125 1
+a125 1
+                disp(sprintf('Best cost: %g', obj_loc.best.E));
+d127 2
+a128 2
+                             obj_loc.best.count, obj_loc.num_runs));
+                disp(obj_loc.best.x);
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d99 1
+d101 2
+a102 2
+                obj.beta = obj.initial_beta;
+                [t, x, E] = seek_equilibrium(obj);
+d107 2
+a108 2
+                E_optimal = energy(obj, x_optimal);
+                if obj.visualize
+d113 6
+a118 6
+                if E_optimal < obj.best.E
+                    obj.best = struct('E', E_optimal, ...
+                                      'x', x_optimal, ...
+                                      'count', 1);
+                elseif E_optimal == obj.best.E
+                    obj.best.count = obj.best.count + 1;
+d121 8
+a128 1
+                disp(sprintf('Best cost: %g, current: %g', obj.best.E, E_optimal));
+a129 5
+            disp('---------------- RESULTS ----------------');
+            disp(sprintf('Best cost: %g', obj.best.E));
+            disp(sprintf('Best configuration (seen %d/%d  times)', ...
+                         obj.best.count, obj.num_runs));
+            disp(obj.best.x);
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+classdef tsp_solver < handle
+d40 1
+a40 1
+    properties(SetObservable, AbortSet)
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d98 1
+a98 1
+            for run = 1:obj.num_runs
+a117 5
+                end
+
+                if obj.done
+                    disp('Done!!!');
+                    break;
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d100 1
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d20 1
+d83 1
+a83 1
+            obj.beta = p.Results.beta;
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d113 1
+a113 1
+                                      'count', 1));
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d111 3
+a113 3
+                    set.best(obj, struct('E', E_optimal, ...
+                                         'x', x_optimal, ...
+                                         'count', 1));
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d113 1
+a113 1
+                                         'count', 1);
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d111 3
+a113 3
+                    obj.best = struct('E', E_optimal, ...
+                                      'x', x_optimal, ...
+                                      'count', 1);
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@a74 5
+            defaultEnergyAccepted = -Inf;
+            validEnergyAccepted = @@(x) isnumeric(x) && isscalar(x) && (x > 0);
+            addParameter(p, 'energyAccepted', defaultEnergyTreshold, ...
+                         validEnergyAccepted);
+
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@a93 1
+            obj.E_accepted = p.Results.energyAccepted;            
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d32 1
+a32 1
+        E_accepted;                     % Stop if this energy level reached
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d124 2
+a125 2
+                if E_optimal <= obj.E_accepted
+                    disp('Done on reaching target energy!!!');
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d39 1
+a39 1
+    properties % (SetObservable, AbortSet)
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d14 1
+a14 1
+classdef tsp_solver
+@

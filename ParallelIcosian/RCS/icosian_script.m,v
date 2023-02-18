@@ -1,0 +1,681 @@
+head	1.37;
+access;
+symbols;
+locks; strict;
+comment	@// @;
+
+
+1.37
+date	2018.10.22.15.00.05;	author marek;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2018.10.22.14.58.58;	author marek;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2018.10.22.14.57.50;	author marek;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2018.10.22.14.56.51;	author marek;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2018.10.22.14.56.40;	author marek;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2018.10.22.14.55.30;	author marek;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2018.10.22.14.27.48;	author marek;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2018.10.22.14.27.33;	author marek;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2018.10.22.04.12.03;	author marek;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2018.10.22.04.10.39;	author marek;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2018.10.22.04.09.48;	author marek;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2018.10.22.04.09.13;	author marek;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2018.10.22.04.08.20;	author marek;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2018.10.22.04.08.10;	author marek;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2018.10.22.04.07.42;	author marek;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2018.10.22.04.07.08;	author marek;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2018.10.22.04.05.44;	author marek;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2018.10.22.03.58.06;	author marek;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2018.10.22.03.50.09;	author marek;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2018.10.22.03.44.48;	author marek;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2018.10.22.03.39.23;	author marek;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2018.10.22.01.59.29;	author marek;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2018.10.22.01.58.52;	author marek;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2018.10.22.01.43.16;	author marek;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2018.10.22.01.42.57;	author marek;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2018.10.10.02.29.29;	author marek;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2018.10.10.01.00.42;	author marek;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2018.10.10.01.00.05;	author marek;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2018.10.10.00.59.29;	author marek;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2018.10.10.00.51.02;	author marek;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2018.10.09.23.12.12;	author marek;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2018.10.09.23.11.42;	author marek;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2018.10.09.23.11.06;	author marek;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2018.10.09.23.10.52;	author marek;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2018.10.09.23.10.23;	author marek;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2018.10.09.23.10.12;	author marek;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.10.09.23.10.01;	author marek;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@p = gcp('nocreate');
+if isempty(p)
+    p = parpool('local',8); % Create a local parpool with 8 workers
+end
+mpiInit;
+
+
+[A, V, W] = icosian
+
+% Visualize Icosian graph and its Hamiltonian circuit
+G = graph(A);
+H = circuit_to_subgraph(V, W);
+h = plot(G,'Layout', 'force3');
+highlight(h, H, ...
+          'EdgeColor', 'r', ...
+          'LineWidth', 2);
+drawnow;
+
+D = double(~A);                      % Distance matrix for Hamiltonian
+                                        % circuit
+rng(666,'twister');
+
+% Create tsp_solver with default cost matrix
+obj = tsp_solver(D, ...
+                 'beta', 0.01, ...
+                 'betaIncrement', 0.04, ...
+                 'numRuns', 1000, ...
+                 'tau', .5,...
+                 'visualize', false,...
+                 'energyChangeThreshold', 6e-2,...
+                 'energyThreshold', .5);
+
+% Compute the Hamiltonian circuit as matrix
+X = circuit_to_matrix(V, W);
+assert( energy(obj, X) == 0);
+
+assert( validate(obj) );
+
+% Run simulation
+tic;
+obj = sim(obj);
+toc;
+
+
+% Print best cost
+disp(obj.best);
+
+if obj.best.E == 0
+    figure;
+    K = matrix_to_subgraph(obj.best.x);
+    h = plot(G,'Layout', 'force3');
+    highlight(h, K, ...
+              'EdgeColor', 'b', ...
+              'LineWidth', 4);
+    title('Found Hamiltonian Circuit');
+end
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+                 'tau', .6,...
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+                 'energyChangeThreshold', 5e-2,...
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+                 'energyChangeThreshold', 1e-1,...
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+                 'energyChangeThreshold', 6e-2,...
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+                 'tau', .4,...
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+                 'tau', .5,...
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d31 1
+a31 1
+                 'energyThreshold', 1-eps);
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d30 2
+a31 1
+                 'energyThreshold', 6e-2);
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                 'numRuns', 100, ...
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                 'numRuns', 50, ...
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+                 'tau', .2,...
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d28 1
+a28 1
+                 'tau', .5,...
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                 'numRuns', 20, ...
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@a38 1
+figure;
+d48 1
+a48 1
+
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+                 'numRuns', 100, ...
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d40 1
+d42 1
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d27 2
+a28 2
+                 'numRuns', 1000, ...
+                 'tau', 1,...
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d1 7
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d23 1
+a23 1
+                 'energyThreshold', 3e-2);
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+                 'numRuns', 300, ...
+d39 1
+a39 6
+K = matrix_to_subgraph(obj.best.x);
+h = plot(G,'Layout', 'force3');
+highlight(h, K, ...
+          'EdgeColor', 'b', ...
+          'LineWidth', 4);
+title('Found Hamiltonian Circuit');
+d41 7
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+                 'numRuns', 100000, ...
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+                 'visualize', true,...
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+                 'visualize', false,...
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@a30 3
+e = addlistener(obj, 'best', 'PostSet', @@myCallback);
+
+
+d33 1
+a33 1
+obj = sim(obj)
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@a48 8
+function myCallback(src, evnt)
+    obj = evnt.AffectedObject;
+    if obj.best.E == 0
+        disp('Minimum reached!!!')
+        obj.done = true;
+    end
+
+end@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d18 2
+a19 2
+                 'beta', 0.1, ...
+                 'betaIncrement', 0.2, ...
+a41 1
+figure;
+d45 2
+a46 2
+          'EdgeColor', 'g', ...
+          'LineWidth', 2);
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+                 'visualize', true,...
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d18 2
+a19 2
+                 'beta', .1, ...
+                 'betaIncrement', 0.1, ...
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d18 2
+a19 2
+                 'beta', .015, ...
+                 'betaIncrement', 0.04, ...
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+                 'visualize', false,...
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d22 2
+a23 1
+                 'visualize', false);
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 2
+                 'visualize', false,...
+                 'energyAccepted', eps);
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d52 1
+a52 1
+    if obj.best.E == 17
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d48 10
+a57 1
+title('Found Hamiltonian Circuit');@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d31 1
+a31 1
+%e = addlistener(obj, 'best', 'PostSet', @@myCallback);
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@a22 1
+                 'energyThreshold', 3e-2,...
+@

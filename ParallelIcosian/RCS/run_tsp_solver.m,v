@@ -1,0 +1,180 @@
+head	1.9;
+access;
+symbols;
+locks; strict;
+comment	@// @;
+
+
+1.9
+date	2018.10.22.14.32.58;	author marek;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2018.10.22.14.32.14;	author marek;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2018.10.22.14.31.51;	author marek;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2018.10.22.14.20.34;	author marek;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2018.10.09.23.09.14;	author marek;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2018.10.09.23.08.33;	author marek;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2018.10.09.23.05.25;	author marek;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2018.10.09.23.02.02;	author marek;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.10.09.23.01.55;	author marek;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d = [ 0 3 9 7;
+      3 0 6 5;
+      5 6 0 6;
+      9 7 4 0 ];
+
+D = d + 4 .* eye(4);
+
+% Create tsp_solver with sample
+obj = tsp_solver(D, ...
+                 'beta', 1, ...
+                 'betaIncrement', .02, ...
+                 'numEpochs', 1000,...
+                 'tau', 5,...
+                 'energyChangeThreshold', 1e-3,...
+                 'energyThreshold', 17.5,...                 
+                 'visualize', true);
+
+assert( validate(obj) );
+
+% Run simulation
+tic;
+obj=sim(obj);
+toc;
+
+% Print best cost
+disp(obj.best);
+
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d21 1
+d23 1
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d15 1
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+                 'energyThreshold', 1e-3,...
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@a18 2
+eh = addlistener(obj, 'best', 'PostSet', @@myCallback);
+
+a24 8
+function myCallback(src, evnt)
+    obj = evnt.AffectedObject;
+    if obj.best.E == 17
+        disp('Minimum reached!!!')
+        obj.done = true;
+    end
+
+end@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d31 1
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d15 1
+a15 2
+                 'visualize', true,...
+                 'energyAccepted', 17);
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d28 7
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d20 1
+a20 1
+%eh = addlistener(obj, 'best', 'PostSet', @@myCallback);
+@
