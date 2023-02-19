@@ -10,7 +10,7 @@ function world {
     echo -n "World!"
 }
 dlay=1e-2  # Change to 5 to see processes
-for (( j=1; $j<$ntimes; j=$j+1 ))
+for (( j=0; $j<$ntimes; j=$j+1 ))
 do
     # Fork with '&'
     (sleep $dlay; hello) & (sleep $dlay; world)
