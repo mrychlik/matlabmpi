@@ -23,6 +23,10 @@ Parallel Implementation of the Icosian Puzzle solver
 This is a parallel implementation of the Icosian Hamilton Circuit
 Problem. It is provided in a separate folder [ParallelIcosian](./ParallelIcosian).
 
+Copright, Waranty
+==================
+This work is provided under the GPL Public Licence v3, see [COPYING](./COPYING)
+
 The origins
 ===================================
 I collected this information over several years
