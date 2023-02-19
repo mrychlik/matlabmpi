@@ -24,3 +24,8 @@ labs, using MPI terminology). The number of labs is explicitly set up in
 the script [icosian_script.m](icosian_script.m) to be 8. Otherwise, the
 default number of labs would be used, as set up by the MATLAB GUI menu
 Parallel \> Parallel Preferences.
+
+A Solution
+==========
+The solution found is in the figure below:
+![An Icosian Puzzle solution](./IcosianSolution.png)
