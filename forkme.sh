@@ -2,7 +2,7 @@
 # EXAMPLE: Print 'Hello, ' and 'World!'
 # in random order w/o a random number generator.
 # HINT: We deliberately create a race condition.
-if !(( $# >= 1 )) ;then ntimes=$1 ;else ntimes=10; fi
+if (($#)) ;then ntimes=$1 ;else ntimes=10; fi
 function hello {
     echo -n "Hello, "
 }
