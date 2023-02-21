@@ -15,7 +15,7 @@
 \date{February 18, 2023}
 \usepackage{etex}
 \usepackage{mathtools}
-\usepackage{MnSymbol}
+%\usepackage{MnSymbol}
 
 \usepackage[english]{babel}
 % or whatever
@@ -241,7 +241,21 @@
 \begin{frame}{Mandelbrot set definition}
   \begin{definition}[The Mandelbrot set]  The set of complex numbers $c$
     for which the function $f_c(z) = z^2 + c$ does not diverge to $\infty$
-    when iterated from $z = 0$.
+    when iterated from $z = 0$. In other words
+    \begin{equation*}
+      \mathcal{M} = \left\{ c\in\mathbb{C}\,:\,
+      \sup_{n}\left|\underbrace{f_c(f_c(\ldots(}_{\text{$n$ times}} 0)\right| < \infty
+      \right\}
+    \end{equation*}
+  \end{definition}
+  \begin{definition}[The Julia set]  For fixed $c$, the set of complex numbers $z$
+    for which the function $f_c(z) = z^2 + c$ does not diverge to $\infty$
+    when iterated from $z$. In other words
+    \begin{equation*}
+      \mathcal{J}_c = \left\{ z\in\mathbb{C}\,:\,
+      \sup_{n}\left|\underbrace{f_c(f_c(\ldots(}_{\text{$n$ times}} z)\right| < \infty
+      \right\}
+    \end{equation*}
   \end{definition}
 \end{frame}
 
