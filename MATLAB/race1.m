@@ -15,14 +15,12 @@ value = Composite();
 
 spmd 
     pause(rand()./10);
-
     if labindex == 1
         for w=1:numlabs
             display(sprintf('%d sending 7 to %d',labindex,w));
             labSend(7,w);
         end
     end
-
     value = labReceive;
     display(sprintf('%d received %d from 1',labindex,value));
 end
