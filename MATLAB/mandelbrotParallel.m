@@ -22,7 +22,7 @@ ylim = [ 0.123640844894862,  0.123640851045266];
 
 % Setup
 t = tic();
-count = mandel(xlim(1), xlim(2), ylim(1), ylim(2));
+count = mandel(xlim(1), xlim(2), ylim(1), ylim(2),gridSize,maxIterations);
 % Show
 cpuTime = toc( t );
 fig = gcf;
@@ -32,7 +32,7 @@ colormap( [jet();flipud( jet() );0 0 0] );
 axis off
 title( sprintf( '%1.2fsecs (without GPU)', cpuTime ) );
 
-function count = mandel(x1,x2,y1,y2)
+function count = mandel(x1,x2,y1,y2,gridSize,maxIterations)
     x = linspace( x1, x2, gridSize );
     y = linspace( y1, y2, gridSize );
     [xGrid,yGrid] = meshgrid( x, y );
