@@ -20,12 +20,11 @@ spmd
     pause(rand()./10);
     if labindex == root
         value = 7;
-        value = labBroadcast(root, value);
-        display(sprintf('Root==%d broadcast %d',labindex,value));
-    else
-        value = labBroadcast(root, 666); % Second inut ignored on root
-        display(sprintf('%d received %d from root==%d',labindex,value,root));
+        display(sprintf('Root==%d will broadcast %d',labindex,value));
     end
+    value = labBroadcast(root, value);
+    % value = labBroadcast(root, 666); % works on root, the second input is ignored
+    display(sprintf('%d received %d from root==%d',labindex,value,root));
 end
 
 for w=1:p.NumWorkers
