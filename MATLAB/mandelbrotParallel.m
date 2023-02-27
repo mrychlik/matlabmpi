@@ -16,7 +16,7 @@ end
 disp(sprintf('Number of workers: %d', p.NumWorkers));
 
 maxIterations = 500; 
-gridSize = [1000,1000];                 % Must be divisible by 8
+gridSize = [1024,1024];                 % Must be divisible by 8
 xlim = [-0.748766713922161, -0.748766707771757];
 ylim = [ 0.123640844894862,  0.123640851045266];
 
