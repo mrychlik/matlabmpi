@@ -25,7 +25,7 @@ ylim = [ 0.123640844894862,  0.123640851045266];
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
 
 % Non-parallel calculation
-%tic;count0 = mandel(x1, x2, y1, y2,gridSize,maxIterations,radius);disp('Non-parallel time');toc
+% tic;count0 = mandel(x1, x2, y1, y2,gridSize,maxIterations,radius);disp('Non-parallel time');toc
 
 
 numSlices = p.NumWorkers*32;
