@@ -25,8 +25,6 @@ spmd
 
     value = labReceive;
     display(sprintf('%d received %d from 1',labindex,value));
-
-
 end
 
 for w=1:p.NumWorkers
