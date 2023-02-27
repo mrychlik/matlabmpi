@@ -22,7 +22,6 @@ ylim = [ 0.123640844894862,  0.123640851045266];
 
 % Setup
 t = tic();
-
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
 count = mandel(x1, x2, y1, y2,gridSize,maxIterations);
 
