@@ -17,12 +17,13 @@ disp(sprintf('Number of workers: %d', p.NumWorkers));
 
 maxIterations = 500; 
 gridSize = [1024,1024];                 % Must be divisible by 8
+radius=2;
 xlim = [-0.748766713922161, -0.748766707771757];
 ylim = [ 0.123640844894862,  0.123640851045266];
 
 % Setup
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
-%count = mandel(x1, x2, y1, y2,gridSize,maxIterations);
+%count = mandel(x1, x2, y1, y2,gridSize,maxIterations,radius);
 
 numSlices = p.NumWorkers*32;
 dx = (x2-x1)./numSlices;
@@ -32,7 +33,7 @@ count = [];
 q = Par(numSlices);                  % Par is a class for benchmarking parallel loops
 parfor j=1:numSlices
     Par.tic;
-    countLocal = mandel(x1 + (j-1).*dx, x1 + j.*dx, y1, y2, gridSizeParallel, maxIterations);
+    countLocal = mandel(x1 + (j-1).*dx, x1 + j.*dx, y1, y2, gridSizeParallel, maxIterations,radius);
     count = [count, countLocal];
     q(j)=Par.toc;
 end
