@@ -13,8 +13,9 @@ disp(sprintf('Number of workers: %d', p.NumWorkers));
 
 value = Composite();
 
-% An incorrect way to broadcast a value and
-% receive it in all workers
+% A correct way to broadcast a value and
+% receive it in all workers. However, lab 1 runs in O(n) time,
+% so it is not an efficient way to broadcast data to others.
 
 spmd 
     pause(rand()./10);
