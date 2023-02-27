@@ -29,7 +29,7 @@ gridSizeParallel = gridSize./[p.NumWorkers,1];
 counts = [];
 
 parfor j=1:p.NumWorkers
-    countLocal = mandel(x1 + (j-1).*dx, x1 + (j-1).*dx, y1, y2, gridSizeParallel, maxIterations);
+    countLocal = mandel(x1 + (j-1).*dx, x1 + j.*dx, y1, y2, gridSizeParallel, maxIterations);
     counts = [counts, countLocal];
 end
 
