@@ -46,6 +46,6 @@ fig.Position = [200 200 600 600];
 imagesc( x, y, count );
 colormap( [jet();flipud( jet() );0 0 0] );
 axis off
-title( sprintf( '%1.2f secs (without GPU)', cpuTime ) );
+title( sprintf( '%1.2f secs (without GPU, num. workers:%d)', cpuTime, p.NumWorkers ) );
 
 
