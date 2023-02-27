@@ -12,7 +12,6 @@ p=gcp('nocreate');
 if isempty(p)
     p = parpool('local', 8)
 end
-
 disp(sprintf('Number of workers: %d', p.NumWorkers));
 
 maxIterations = 500; 
