@@ -48,20 +48,4 @@ colormap( [jet();flipud( jet() );0 0 0] );
 axis off
 title( sprintf( '%1.2f secs (without GPU)', cpuTime ) );
 
-function count = mandel(x1,x2,y1,y2,gridSize,maxIterations)
-    x = linspace( x1, x2, gridSize(1) );
-    y = linspace( y1, y2, gridSize(2) );
-    [xGrid,yGrid] = meshgrid( x, y );
-    z0 = xGrid + 1i*yGrid;
-    count = ones( size(z0) );
-
-    % Calculate
-    z = z0;
-    for n = 0:maxIterations
-        z = z.*z + z0;
-        inside = abs( z )<=2;
-        count = count + inside;
-    end
-    count = log( count );
-end
 
