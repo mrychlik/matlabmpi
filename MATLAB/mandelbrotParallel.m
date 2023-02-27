@@ -21,13 +21,14 @@ xlim = [-0.748766713922161, -0.748766707771757];
 ylim = [ 0.123640844894862,  0.123640851045266];
 
 % Setup
-t = tic();
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
 count = mandel(x1, x2, y1, y2,gridSize,maxIterations);
 
 dx = (x2-x1)./p.NumWorkers;
 gridSizeParallel = gridSize./[p.NumWorkers,1];
 count = [];
+
+t = tic();
 
 parfor j=1:p.NumWorkers
     countLocal = mandel(x1 + (j-1).*dx, x1 + j.*dx, y1, y2, gridSizeParallel, maxIterations);
