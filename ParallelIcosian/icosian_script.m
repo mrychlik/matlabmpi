@@ -1,11 +1,16 @@
 p = gcp('nocreate');
+numWorkers = 20; % Desired number of workers
+if isempty(p) || p.NumWorkers < numWorkers
+    delete(p)
+    p=[]
+end
 if isempty(p)
-    p = parpool('local',8); % Create a local parpool with 8 workers
+    p = parpool('local',numWorkers); % Create a local parpool
 end
 mpiInit;
 
 
-[A, V, W] = icosian
+[A, V, W] = icosian;
 
 % Visualize Icosian graph and its Hamiltonian circuit
 G = graph(A);

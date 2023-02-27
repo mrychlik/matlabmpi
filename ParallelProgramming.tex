@@ -15,7 +15,7 @@
 \date{February 18, 2023}
 \usepackage{etex}
 \usepackage{mathtools}
-\usepackage{MnSymbol}
+%\usepackage{MnSymbol}
 
 \usepackage[english]{babel}
 % or whatever
@@ -234,6 +234,46 @@
     using hardware (special instructions) and compiler (awarness that some
     variables must be changed atomically).
   \end{description}
+\end{frame}
+
+\section{SIMD on GPU}
+
+\begin{frame}{Mandelbrot set definition}
+  \begin{definition}[The Mandelbrot set]  The set of complex numbers $c$
+    for which the function $f_c(z) = z^2 + c$ does not diverge to $\infty$
+    when iterated from $z = 0$. In other words
+    \begin{equation*}
+      \mathcal{M} = \left\{ c\in\mathbb{C}\,:\,
+      \sup_{n}\left|\underbrace{f_c(f_c(\ldots(}_{\text{$n$ times}} 0)\right| < \infty
+      \right\}
+    \end{equation*}
+  \end{definition}
+\end{frame}
+
+\begin{frame}{The Mandelbrot set on GPU}
+  \begin{figure}
+    \includegraphics[width=.8\textwidth]{Mandelbrot.png}
+    \caption{Example page: \href{https://www.mathworks.com/help/parallel-computing/illustrating-three-approaches-to-gpu-computing-the-mandelbrot-set.html}{Mandelbrot Set}}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{The Julia definition}
+  \begin{definition}[The Julia set]  For fixed $c$, the set of complex numbers $z$
+    for which the function $f_c(z) = z^2 + c$ does not diverge to $\infty$
+    when iterated from $z$. In other words
+    \begin{equation*}
+      \mathcal{J}_c = \left\{ z\in\mathbb{C}\,:\,
+      \sup_{n}\left|\underbrace{f_c(f_c(\ldots(}_{\text{$n$ times}} z)\right| < \infty
+      \right\}
+    \end{equation*}
+  \end{definition}
+\end{frame}
+
+\begin{frame}{The Julia set on GPU}
+  \begin{figure}
+    \includegraphics[width=.8\textwidth]{Julia.png}
+    \caption{Example page: Look for a demo on MATLAB \emph{File Exchange}}
+  \end{figure}
 \end{frame}
 
 \section{Trivial Parallelism}

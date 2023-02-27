@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # EXAMPLE: Print 'Hello, ' and 'World!'
 # in random order w/o a random number generator.
 # HINT: We deliberately create a race condition.

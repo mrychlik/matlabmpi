@@ -26,7 +26,7 @@ commander = 9;                          % Designate the commander
 
 % Start the parpool (thread pool)
 p = gcp('nocreate');
-if ~isempty(p) && p.NumWorkers < numSoldiers
+if ~isempty(p) && p.NumWorkers ~= numSoldiers
     delete(p);
     p=[];
 end
