@@ -43,7 +43,7 @@ plot(q);
 % Show
 cpuTime = q.StopTime;
 fig = gcf;
-fig.Position = [200 200 600 600];
+fig.Position = [200 200 1024 1024];
 imagesc( x, y, count );
 colormap( [jet();flipud( jet() );0 0 0] );
 axis off
