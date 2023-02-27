@@ -25,7 +25,7 @@ t = tic();
 %count = mandel(xlim(1), xlim(2), ylim(1), ylim(2),gridSize,maxIterations);
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
 dx = (x2-x1)./p.NumWorkers;
-gridSizeParallel = gridSize./[p.numWorkers,1];
+gridSizeParallel = gridSize./[p.NumWorkers,1];
 count = zeros(gridSize);
 parfor j=1:p.NumWorkers
     count = mandel(x1 + (j-1).*dx, x1 + (j-1).*dx, y1, y2, gridSizeParallel, maxIterations);
