@@ -2,6 +2,7 @@
 % This is a fix for the file race1.m demonstrating a simple race condition.
 % In this version, we avoid the race condition by using labBroadcast.
 % This is the best way to share the value in terms of performance.
+% NOTE: The new code code should use spmdBroadcast which has simpler logic.
 
 p=gcp('nocreate');
 if isempty(p)
