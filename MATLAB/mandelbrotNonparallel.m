@@ -8,12 +8,6 @@
 % 
 %----------------------------------------------------------------
 % Mandelbrot without GPU (MATLAB stock example, modified)
-p=gcp('nocreate');
-if isempty(p)
-    p = parpool('local', 20)
-end
-disp(sprintf('Number of workers: %d', p.NumWorkers));
-
 maxIterations = 500; 
 gridSize = [2048,2048];                 % Must be divisible by 8
 radius=4;
