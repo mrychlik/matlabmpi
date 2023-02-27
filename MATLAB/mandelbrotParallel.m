@@ -27,7 +27,7 @@ x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
 % Non-parallel calculation
 tic;
 count0 = mandel(x1, x2, y1, y2,gridSize,maxIterations,radius);
-toc;
+toc
 fig; 
 
 numSlices = p.NumWorkers*32;
