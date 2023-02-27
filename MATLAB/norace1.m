@@ -18,7 +18,7 @@ value = Composite();
 spmd
     pause(rand()./10);
     % Send 7 to all workers from root 1
-    value = spmdBroadcast(labindex, 7);
+    value = spmdBroadcast(1, 7);
     display(sprintf('%d received broadcast %d',labindex,value));
 end
 
