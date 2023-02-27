@@ -1,3 +1,13 @@
+%----------------------------------------------------------------
+% File:     mandelbrot.m
+%----------------------------------------------------------------
+%
+% Author:   Marek Rychlik (rychlik@arizona.edu)
+% Date:     Mon Feb 27 12:27:35 2023
+% Copying:  (C) Marek Rychlik, 2020. All rights reserved.
+% 
+%----------------------------------------------------------------
+% Mandelbrot without GPU or parallelization (MATLAB stack example)
 maxIterations = 500;
 gridSize = 1000;
 xlim = [-0.748766713922161, -0.748766707771757];
