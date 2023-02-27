@@ -33,7 +33,7 @@ dx = (x2-x1)./numSlices;
 gridSizeParallel = gridSize./[numSlices,1];
 count = [];
 
-q = Par(numSlices);                  % Par is a class for benchmarking parallel loops
+q = Par(numSlices);                  % Par is a utility class for benchmarking parallel loops
 parfor j=1:numSlices
     Par.tic;
     countLocal = mandel(x1 + (j-1).*dx, x1 + j.*dx, y1, y2, gridSizeParallel, maxIterations,radius);
