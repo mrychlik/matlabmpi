@@ -338,6 +338,22 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Deadlock (deadly embrace)}
+  \begin{definition}[Deadlock]
+    \emph{Deadlock} (which is sometimes called \emph{the deadly
+      embrace}) occurs when two or more programs (threads, workers,
+    labs) are each waiting for the others to complete a task before
+    proceeding.
+  \end{definition}
+
+  \begin{quote}
+    The programs act like the overly congenial gophers in some Looney Tunes cartoons:
+
+    "Oh please, you first," says one.
+    "No no, I insist, you first," says the other. And nothing goes anywhere.
+  \end{quote}
+\end{frame}
+
 \begin{frame}[allowframebreaks]{An 'spmd' example (WRONG!)}
   \begin{small}
     \lstinputlisting{MATLAB/race1.m}
