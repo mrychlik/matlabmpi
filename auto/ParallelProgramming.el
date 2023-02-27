@@ -32,7 +32,6 @@
     "beamer10"
     "etex"
     "mathtools"
-    "MnSymbol"
     "babel"
     "inputenc"
     "times"
