@@ -39,7 +39,7 @@ stop(q);
 plot(q);
 
 % Show
-cpuTime = toc( t );
+cpuTime = q.StopTime;
 fig = gcf;
 fig.Position = [200 200 600 600];
 imagesc( x, y, count );
