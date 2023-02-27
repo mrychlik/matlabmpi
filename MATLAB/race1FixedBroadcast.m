@@ -12,9 +12,7 @@ disp(sprintf('Number of workers: %d', p.NumWorkers));
 
 value = Composite();
 
-% An incorrect way to broadcast a value and
-% receive it in all workers
-
+% The correct way to broadcast a value and receive it in all workers
 root=1;
 spmd 
     pause(rand()./10);
