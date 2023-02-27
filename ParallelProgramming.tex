@@ -50,7 +50,7 @@
 
 \usepackage{listings} %typesets code
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mygreen}{RGB}{28,152,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
 
 \lstset{language=Matlab,%
@@ -312,7 +312,7 @@
   \item Worker becomes a \emph{lab}
   \item Worker knows its identity, or \emph{labindex}
   \item The main thread is now a lab with \emph{labindex==1} (recall: MATLAB has 1-based arrays)
-  \item Labs communicate by using \emph{collective communications}: labSend, labReceive, labeSendReceive;
+  \item Labs communicate by using \emph{collective communications}: labSend, labReceive, labSendReceive;
   \item synchronization: labBarrier, labBroadcast
   \item Labs can be organized as a graph with variable topology, e.g. edges of a hypercube, for
     the purpose of communicating with some neighbors
