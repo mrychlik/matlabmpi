@@ -40,8 +40,7 @@ parfor j=1:numSlices
     count = [count, countLocal];
     q(j)=Par.toc;
 end
-stop(q);
-plot(q);
+stop(q);plot(q);
 
 % Show
 cpuTime = q.StopTime;
