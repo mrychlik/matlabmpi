@@ -1,6 +1,9 @@
 % FILE: norace1.m
 % This file demonstrates the best way for
-% workers to share a value
+% workers to share a value. One flaw is that the value
+% is sent from every worker, and received multiple times.
+% Only one value will be trully received, the rest will be
+% discarded.
 p=gcp('nocreate');
 if isempty(p)
     p = parpool('local', 8)
