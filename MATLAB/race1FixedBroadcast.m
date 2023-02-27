@@ -1,6 +1,4 @@
 % FILE: race1FixedBroadcast.m
-% This file demonstrates a simple race condition
-% when trying to share a value between all workers
 % NOTE: In this version, we avoid the race condition
 % by using labBroadcast.
 
