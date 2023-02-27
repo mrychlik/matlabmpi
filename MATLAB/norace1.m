@@ -1,6 +1,7 @@
 % FILE: norace1.m
 % This file demonstrates the best way for
-% workers to share a value. 
+% workers to share a value. The new command is spmdBroadcast
+% and it replaces labBroadcast.
 p=gcp('nocreate');
 if isempty(p)
     p = parpool('local', 8)
