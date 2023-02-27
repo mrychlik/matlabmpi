@@ -533,8 +533,17 @@
 \section{Parallel Mandelbrot}
 
 \begin{frame}[allowframebreaks]{Basic CPU Mandelbrot}
-  \begin{figure}
-    \includegraphics[width=\textwidth]{BasicMandelbrot.png}
+  \begin{figure}[H]
+    \includegraphics[width=0.8\textwidth]{BasicMandelbrot.png}
+  \end{figure}
+  \begin{tiny}
+    \lstinputlisting{MATLAB/mandelbrot.m}
+  \end{tiny}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Parallelized CPU Mandelbrot (8 workers)}
+  \begin{figure}[H]
+    \includegraphics[width=0.8\textwidth]{BasicMandelbrot.png}
   \end{figure}
   \begin{tiny}
     \lstinputlisting{MATLAB/mandelbrot.m}
