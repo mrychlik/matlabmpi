@@ -10,7 +10,7 @@
 % Mandelbrot without GPU, parfor (MATLAB stock example, modified)
 p=gcp('nocreate');
 if isempty(p)
-    p = parpool('local', 8)
+    p = parpool('local', 4)
 end
 
 disp(sprintf('Number of workers: %d', p.NumWorkers));
