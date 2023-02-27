@@ -16,7 +16,7 @@ end
 disp(sprintf('Number of workers: %d', p.NumWorkers));
 
 maxIterations = 500; 
-gridSize = [1000,1000];
+gridSize = [1000,1000];                 % Must be divisible by 8
 xlim = [-0.748766713922161, -0.748766707771757];
 ylim = [ 0.123640844894862,  0.123640851045266];
 
@@ -42,8 +42,8 @@ axis off
 title( sprintf( '%1.2fsecs (without GPU)', cpuTime ) );
 
 function count = mandel(x1,x2,y1,y2,gridSize,maxIterations)
-    x = linspace( x1, x2, gridSize );
-    y = linspace( y1, y2, gridSize );
+    x = linspace( x1, x2, gridSize(1) );
+    y = linspace( y1, y2, gridSize(2) );
     [xGrid,yGrid] = meshgrid( x, y );
     z0 = xGrid + 1i*yGrid;
     count = ones( size(z0) );
