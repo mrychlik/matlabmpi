@@ -44,8 +44,8 @@ stop(q);plot(q);
 cpuTime = q.StopTime;
 fig = gcf;
 fig.Position = [200 200 1024 1024];
-x = linspace( x1, x2, gridSize );
-y = linspace( y1, y2, gridSize );
+x = linspace( x1, x2, gridSize(1) );
+y = linspace( y1, y2, gridSize(2) );
 imagesc( x, y, count );
 colormap( [jet();flipud( jet() );0 0 0] );
 axis off
