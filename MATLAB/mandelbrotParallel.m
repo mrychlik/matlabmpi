@@ -22,8 +22,10 @@ ylim = [ 0.123640844894862,  0.123640851045266];
 
 % Setup
 t = tic();
-%count = mandel(xlim(1), xlim(2), ylim(1), ylim(2),gridSize,maxIterations);
+
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
+count = mandel(x1, x2, y1, y2,gridSize,maxIterations);
+
 dx = (x2-x1)./p.NumWorkers;
 gridSizeParallel = gridSize./[p.NumWorkers,1];
 counts = [];
