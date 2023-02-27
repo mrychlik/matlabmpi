@@ -19,6 +19,8 @@ gridSize = [2048,2048];                 % Must be divisible by 8
 radius=4;
 xlim = [-0.748766713922161, -0.748766707771757];
 ylim = [ 0.123640844894862,  0.123640851045266];
+x = linspace( xlim(1), xlim(2), gridSize );
+y = linspace( ylim(1), ylim(2), gridSize );
 
 % Setup
 x1 = xlim(1); x2=xlim(2); y1=ylim(1); y2=ylim(2);
