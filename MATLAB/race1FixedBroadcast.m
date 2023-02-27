@@ -21,10 +21,11 @@ spmd
     if labindex == root
         value_to_broadcast = 7;
         display(sprintf('Root==%d will broadcast %d',labindex,value_to_broadcast));
+        value = labBroadcast(root, value_to_broadcast);
+    else
+        value = labBroadcast(root, 666); % works on root, the second input is ignored
+        display(sprintf('%d received %d from root==%d',labindex,value,root));
     end
-    value = labBroadcast(root, value_to_broadcast);
-    % value = labBroadcast(root, 666); % works on root, the second input is ignored
-    display(sprintf('%d received %d from root==%d',labindex,value,root));
 end
 
 for w=1:p.NumWorkers
