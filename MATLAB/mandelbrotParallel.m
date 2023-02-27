@@ -28,7 +28,7 @@ dx = (x2-x1)./p.NumWorkers;
 gridSizeParallel = gridSize./[p.NumWorkers,1];
 counts = [];
 parfor j=1:p.NumWorkers
-    count = mandel(x1 + (j-1).*dx, x1 + (j-1).*dx, y1, y2, gridSizeParallel, maxIterations);
+    countLocal = mandel(x1 + (j-1).*dx, x1 + (j-1).*dx, y1, y2, gridSizeParallel, maxIterations);
     count = [counts, countLocal];
 end
 
