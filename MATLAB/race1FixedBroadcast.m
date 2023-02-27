@@ -19,10 +19,10 @@ root=1;
 spmd 
     pause(rand()./10);
     if labindex == root
-        value = 7;
-        display(sprintf('Root==%d will broadcast %d',labindex,value));
+        value_to_broadcast = 7;
+        display(sprintf('Root==%d will broadcast %d',labindex,value_to_broadcast));
     end
-    value = labBroadcast(root, value);
+    value = labBroadcast(root, value_to_broadcast);
     % value = labBroadcast(root, 666); % works on root, the second input is ignored
     display(sprintf('%d received %d from root==%d',labindex,value,root));
 end
